@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+  
+    <title>Jeetzo</title>
+  
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+  </head>
+<body bgcolor="lightgrey">
+<h1 align="center">Embedding Multimedia on a Web Page</h1>
+<h1> &lt;audio>Tag</h1>
+<p><h2>HTML 5 has introduced a new audio element to embed a sound or audio file into HTML documents. There are various websites, such as YouTube, that facilitaies the user to play, listen or download the music files.Therefore, to play music on a Web page, you can embed music files that can be listened by the users. </h2></p>
+<p><h2>Sometimes, a browser does not support the &lt;audio> tag. In that case, you can display some content to the user, which informs the user that the browser does not support the tag. This content is placed between the opening and closing tag of &lt;audio> and is termed as a fallback content. If the browser does not provide a support to the &lt;audio> tag, fallback content is displayed on a Web page. </h2></p>
+<h2>The element-specific attributes of the audio tag are listed :</h2>
+<center>
+<table border="2" bgcolor="LightBlue">
+<tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+<tr><td>autoplay</td><td>autoplay</td><td>Plays the sound file immediately or automatically on the loading of a Web Page</td></tr>
+<tr><td>controls</td><td>controls</td><td>Displays the controls on a Web page, such as a play button or a stop button</td></tr>
+<tr><td>preload</td><td>None metadata auto</td><td>Starts the buffering of the file </td></tr>
+<tr><td>Src </td><td>URL</td><td>Specifies the path of an audio file to be played </td></tr>
+<tr><td>loop </td><td>Loop</td><td>Indicates to replay the audio file once it is finished</td></tr>
+</table>
+</center>
+<h1>Example :</h1>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+&lt;head><br>
+&lt;title>Embedding Multimedia on a Web Page&lt;/title><br>
+&lt;/head><br>
+&lt;body><br>
+&lt;audio controls="controls" loop="Loop" src="On my way.mp3"><br>
+&lt;/audio><br>
+&lt;/body><br>
+&lt;/html><br>
+<br>
+<br>
+<br>
+<br>
+<h1>&lt;Video>Tag</h1>
+<p><h2>You can play a video file by using the &lt;video> tag that has been introduced as a media element in HTML5. With the &lt;video> tag, you can add the functionality to manipulate the videos and built-in video controls Web in a page. Along with this, you can also include a video player without installing a plug-in, such as Flash</h2></p>
+<h2> The attributes of the &lt;video> tag are listed :</h2>
+<center>
+<table border="2" bgcolor="LightBlue">
+<tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+<tr><td>autoplay</td><td>autoplay</td><td>Plays the video file immediately or automatically on the loading of a Web Page</td></tr>
+<tr><td>controls</td><td>controls</td><td>Displays the controls on a Web page, such as a play button or a stop button</td></tr>
+<tr><td>poster</td><td>Image URL</td><td>Displays an image in case the video is unavailable or not loaded yet</td></tr>
+<tr><td>preload</td><td>preload</td><td>Starts the buffering of the file </td></tr>
+<tr><td>Src </td><td>URL</td><td>Specifies the path of an video file to be played </td></tr>
+<tr><td>loop </td><td>Loop</td><td>Indicates to replay the video file once it is finished</td></tr>
+<tr><td>height </td><td>pixels</td><td>Specifies the height for the video player displayed on a Web page </td></tr>
+<tr><td>width </td><td>pixels</td><td>Specifies the width for the video player displayed on a Web page </td></tr>
+</table>
+</center>
+<h1>Example :</h1>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+&lt;head><br>
+&lt;title>Embedding Multimedia on a Web Page&lt;/title><br>
+&lt;/head><br>
+&lt;body><br>
+&lt;video controls="controls" height="500" width="300" src="Mee.mp4"><br>
+&lt;/video><br>
+&lt;/body><br>
+&lt;/html><br>
+<br>
+<br>
+<br>
+<br>
+<h1>&lt;source>Tag</h1>
+<p><h2>HTML5 has introduced the &lt;source> tag to embed two or more audio or video files of different media types.The browser may choose the type of file to play based on its media type or codec support. The &lt;source> tag is used inside the media element, such as audio or video, to enmbed audio or video files. In other words, you can include more than one &lt;source> tag within the media element.</h2></p>
+<h2> The attributes of the &lt;source> tag are listed :</h2>
+<center>
+<table border="2" bgcolor="LightBlue">
+<tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+<tr><td>Src </td><td>URL</td><td>Specifies the path of the file name to play an audio or video file </td></tr>
+<tr><td>type </td><td>numeric value</td><td>Indicates the type of content that is embedded on a Web page </td></tr>
+<tr><td>media </td><td>Media query</td><td>Specifies the type of media resource, which is to be downloaded on the browser or not</td></tr>
+</table>
+</center>
+<h1>Example :</h1>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+&lt;head><br>
+&lt;title>Embedding Multimedia on a Web Page&lt;/title><br>
+&lt;/head><br>
+&lt;body><br>
+&lt;audio controls><br>
+  &lt;source src="horse.ogg" type="audio/ogg"><br>
+  &lt;source src="On my way.mp3" type="audio/mpeg"><br>
+  &lt;/audio><br>
+&lt;/body><br>
+&lt;/html><br>
+<br>
+<br>
+<br>
+<br>
+<h1>&lt;embed>Tag</h1>
+<p><h2>There is another way to embed an audio file or a video file on a Web page by using the &lt;embed> tag. Inside the 
+&lt;embed> tag, the src attribute is used to specify the path of the audio or video file you want to embed.</h2></p>
+<h2> The attributes of the &lt;embed> tag are listed :</h2>
+<center>
+<table border="2" bgcolor="LightBlue">
+<tr><th>Attribute</th><th>Value</th><th>Description</th></tr>
+<tr><td>Src </td><td>URL</td><td>Specifies the path of the file name to play an audio or video file </td></tr>
+<tr><td>type </td><td>MIME type</td><td>Indicates the type of content that is embedded on a Web page </td></tr>
+<tr><td>height </td><td>pixels</td><td>Specifies the height to display content on a Web page</td></tr>
+<tr><td>width</td><td>pixels</td><td>Specifies the width to display content on a Web page</td></tr>
+</table>
+</center>
+<h1>Example :</h1>
+&lt;!DOCTYPE html><br>
+&lt;html><br>
+&lt;head><br>
+&lt;title>Embedding Multimedia on a Web Page&lt;/title><br>
+&lt;/head><br>
+&lt;body><br>
+&lt;embed src="Astronaut.jpg" height="300" width="500"><br>
+&lt;/body><br>
+&lt;/html><br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
